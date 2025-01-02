@@ -4,8 +4,8 @@ metadata:
   name: parent-app
 spec:
   destination:
-    name: ''
-    namespace: openshift-gitops
+    name: parent
+    namespace: test-apps
     server: https://kubernetes.default.svc
   source:
     path: ./
@@ -16,4 +16,4 @@ spec:
   syncPolicy:
     automated:
       prune: false
-      selfHeal: true
+      selfHeal: false
