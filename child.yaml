@@ -1,0 +1,27 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: parent-app
+spec:
+  destination:
+    name: child-app
+    namespace: test-apps-2
+    server: https://kubernetes.default.svc
+  source:
+    path: apps
+    repoURL: https://github.com/diksha1999/app-of-apps-by-diksha
+    targetRevision: HEAD
+  sources: []
+  project: default
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+      - CreateNamespace=true
+    retry:
+      limit: 5
+      backoff:
+        duration: 5s
+        maxDuration: 5m0s
+        factor: 2
