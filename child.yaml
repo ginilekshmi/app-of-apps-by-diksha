@@ -1,11 +1,10 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: parent-app
+  name: child-app-1
 spec:
   destination:
-    name: child-app
-    namespace: test-apps-2
+    namespace: openshift-gitops
     server: https://kubernetes.default.svc
   source:
     path: apps
