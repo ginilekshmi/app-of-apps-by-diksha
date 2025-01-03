@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: test-diksha
+  name: test-app-diksha-1
   namespace: openshift-gitops
 spec:
   selector:
