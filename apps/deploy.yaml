@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: test-app-diksha-1
-  namespace: openshift-gitops
+  namespace: test1
 spec:
   selector:
     matchLabels:
