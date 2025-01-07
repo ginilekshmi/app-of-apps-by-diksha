@@ -1,10 +1,10 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: child-application1
+  name: test-apps-ns-app1
 spec:
   destination:
-    namespace: test-apps-ns-app1
+    namespace: test-apps
     server: https://kubernetes.default.svc
   source:
     path: app01
