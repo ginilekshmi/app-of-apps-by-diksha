@@ -11,11 +11,7 @@ spec:
     repoURL: https://github.com/diksha1999/app-of-apps-by-diksha
     targetRevision: HEAD
   sources: []
-  project: default
-  syncPolicy:
-    automated:
-      prune: true
-      selfHeal: true
+  project: parent
     syncOptions:
       - CreateNamespace=true
     retry:
