@@ -12,10 +12,6 @@ spec:
     targetRevision: HEAD
   sources: []
   project: test-apps
-  syncPolicy:
-    automated:
-      prune: true
-      selfHeal: true
     syncOptions:
       - CreateNamespace=true
     retry:
