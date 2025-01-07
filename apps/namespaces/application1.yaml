@@ -4,7 +4,7 @@ metadata:
   name: child-application1
 spec:
   destination:
-    namespace: test-apps
+    namespace: test-apps-ns-app1
     server: https://kubernetes.default.svc
   source:
     path: app01
