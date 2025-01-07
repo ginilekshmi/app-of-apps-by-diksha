@@ -11,7 +11,7 @@ spec:
     repoURL: https://github.com/diksha1999/app-of-apps-child
     targetRevision: HEAD
   sources: []
-  project: default
+  project: test-apps
   syncPolicy:
     automated:
       prune: true
