@@ -10,4 +10,4 @@ spec:
     path: test-app1-ns
     repoURL: https://github.com/diksha1999/app-of-apps-child
     targetRevision: HEAD
-  project: parent
+  project: default
