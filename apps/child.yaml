@@ -7,8 +7,8 @@ spec:
     namespace: openshift-gitops
     server: https://kubernetes.default.svc
   source:
-    path: apps/namespaces
-    repoURL: https://github.com/diksha1999/app-of-apps-by-diksha
+    path: test-app1-ns
+    repoURL: https://github.com/diksha1999/app-of-apps-child
     targetRevision: HEAD
   sources: []
   project: parent
