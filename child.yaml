@@ -1,5 +1,5 @@
 apiVersion: argoproj.io/v1alpha1
-kind: Applicationb
+kind: Application
 metadata:
   name: child-app-1
 spec:
