@@ -1,5 +1,5 @@
 apiVersion: argoproj.io/v1alpha1
-kind: Application
+kind: Applicationb
 metadata:
   name: child-app-1
 spec:
@@ -16,7 +16,7 @@ spec:
       prune: true
       selfHeal: true
     syncOptions:
-      - CreateNamespace=truee
+      - CreateNamespace=true
     retry:
       limit: 5
       backoff:
