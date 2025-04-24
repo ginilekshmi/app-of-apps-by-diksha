@@ -4,7 +4,7 @@ metadata:
   name: child-app-1
 spec:
   destination:
-    namespace: openshift-gitopss
+    namespace: openshift-gitops
     server: https://kubernetes.default.svc
   source:
     path: test-app1-ns
