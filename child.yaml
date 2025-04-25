@@ -9,8 +9,8 @@ spec:
   source:
     path: test-app1-ns
     repoURL: https://github.com/ginilekshmi/app-of-apps-child
-    targetRevision: HEADD
-  project: default
+    targetRevision: HEAD
+  project: defaultt
   syncPolicy:
     automated:
       prune: true
