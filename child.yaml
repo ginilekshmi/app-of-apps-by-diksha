@@ -7,10 +7,10 @@ spec:
     namespace: openshift-gitops
     server: https://kubernetes.default.svc
   source:
-    path: test-app1-ns
+    path: test-app1-ns-1
     repoURL: https://github.com/ginilekshmi/app-of-apps-child
     targetRevision: HEAD
-  project: defaultt
+  project: default
   syncPolicy:
     automated:
       prune: true
